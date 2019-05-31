@@ -14,8 +14,8 @@
 
 /// here is the initial configuration of widget instance(s)
   oliveUI.setWidgetInstanceConfiguration(widget1, {
-    indexurl:"https://api.github.com/repositories/175385549/contents/js",
-    indexfilename:"indexlist2",
+    indexurl:"https://api.github.com/repos/bocbrokeragetest/brokerage/contents/repodata",
+    indexfilename:"indexlist",
     type:"JobTile"
   });
 
