@@ -43,6 +43,6 @@
   
     setTimeout(function() {
     $('.glyphicon-refresh').trigger('click');
- }, 1000);
+ }, 3000);
 
 }(jQuery, OliveUI));
