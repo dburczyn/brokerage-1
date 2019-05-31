@@ -40,5 +40,9 @@
       });
     })
   );
+  
+    setTimeout(function() {
+    $('.glyphicon-refresh').trigger('click');
+ }, 1000);
 
 }(jQuery, OliveUI));
