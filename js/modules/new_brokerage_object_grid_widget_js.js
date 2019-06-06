@@ -16,8 +16,8 @@
       var listsha;
       var widgetlist;
       var instance;
-      widgetcontainer = document.createElement('div');
-      widgetcontainerinner = document.createElement('div');
+      var widgetcontainer = document.createElement('div');
+      var widgetcontainerinner = document.createElement('div');
       var grid = {
         type: "Grid",
         render: function (gridrendercontent) {
