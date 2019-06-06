@@ -10,14 +10,30 @@
 
 
   var widget1 = oliveUI.createWidgetInstance('Grid Widget');
+  var widget2 = oliveUI.createWidgetInstance('Grid Widget');
+  var widget3 = oliveUI.createWidgetInstance('Grid Widget');
 
 
 /// here is the initial configuration of widget instance(s)
   oliveUI.setWidgetInstanceConfiguration(widget1, {
     indexurl:"https://api.github.com/repos/bocbrokeragetest/brokerage/contents/repodata",
     indexfilename:"indexlist",
-    type:"JobTile"
+    type:"JobTile",
   });
+
+  oliveUI.setWidgetInstanceConfiguration(widget2, {
+    indexurl:"https://api.github.com/repos/bocbrokeragetest/brokerage/contents/repodata",
+    indexfilename:"indexlist",
+    type:"TrainingTile",
+  });
+
+  oliveUI.setWidgetInstanceConfiguration(widget3, {
+    indexurl:"https://api.github.com/repos/bocbrokeragetest/brokerage/contents/repodata",
+    indexfilename:"indexlist",
+    type:"EventTile",
+  });
+
+
 
 
   var toSave = oliveUI.getContent();
@@ -41,8 +57,5 @@
     })
   );
   
-    setTimeout(function() {
-    $('.glyphicon-refresh').trigger('click');
- }, 3000);
 
 }(jQuery, OliveUI));
